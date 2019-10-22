@@ -25,7 +25,7 @@ if(generateEl) {
         const hasNumbers = numbersEl.checked;
         const hasSymbols = symbolsEl.checked;
     
-        console.log(generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length));
+        resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumbers, hasSymbols, length);
     });
 }
 
